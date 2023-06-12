@@ -46,6 +46,7 @@ import {
             case TOGGLE_CART:
               // Handle toggling the visibility of the cart
               return state;
+              
             default:
               return state;
           }
@@ -70,11 +71,17 @@ import {
               return state;
           }
         };
+        //  new reducer to handle the cartOpen key
+        const cartOpenReducer = (state = false, action) => {
+          // handle actions related to cartOpen
+          return state;
+        };        
         
         // Combine the reducers using combineReducers
         const rootReducer = combineReducers({
           products: productsReducer,
           cart: cartReducer,
+          cartOpen: cartOpenReducer,
           categories: categoriesReducer,
           currentCategory: currentCategoryReducer,
         });
