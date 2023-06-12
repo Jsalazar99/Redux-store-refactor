@@ -2,8 +2,8 @@ import React from 'react';
 //import ReactDOM from 'react-dom';
 import { render } from 'react-dom';
 // imports for Redux store 
-//import store from './app/store'
-import store from './store';
+import store from './app/store'
+// import store from './store';
 
 import { Provider } from 'react-redux'
 //import { createStore } from 'redux'
